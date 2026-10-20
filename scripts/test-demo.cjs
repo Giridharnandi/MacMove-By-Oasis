@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs');
+const film={dataset:{}},button={attrs:{},handlers:{},setAttribute(k,v){this.attrs[k]=v},addEventListener(k,v){this.handlers[k]=v}};
+const motion={matches:false,addEventListener(k,fn){this.changed=fn}};
+const document={hidden:false,handlers:{},querySelector:()=>film,getElementById:()=>button,addEventListener(k,fn){this.handlers[k]=fn}};
+vm.runInNewContext(fs.readFileSync(require.resolve('../docs/assets/demo.js'),'utf8'),{document,matchMedia:()=>motion});
+assert.equal(film.dataset.paused,'false');button.handlers.click();assert.equal(film.dataset.paused,'true');assert.equal(button.attrs['aria-label'],'Resume animation');button.handlers.click();assert.equal(film.dataset.paused,'false');
+document.hidden=true;document.handlers.visibilitychange();assert.equal(film.dataset.suspended,'true');document.hidden=false;document.handlers.visibilitychange();assert.equal(film.dataset.suspended,'false');motion.matches=true;motion.changed();assert.equal(film.dataset.paused,'true');
+const html=fs.readFileSync(require.resolve('../docs/index.html'),'utf8');assert.ok(!html.includes('id="sample-file"'));assert.ok(!html.includes('Start demo'));for(const scene of ['scene-batch','scene-pdf','scene-trim'])assert.ok(html.includes(scene));
+const css=fs.readFileSync(require.resolve('../docs/assets/walkthrough.css'),'utf8');assert.match(css,/film-scene 36s linear infinite/);assert.match(css,/prefers-reduced-motion:reduce/);assert.match(css,/animation-play-state:paused/);
+console.log('PASS automatic three-scene loop, pause/resume, visibility suspension, reduced motion and obsolete demo removal');
