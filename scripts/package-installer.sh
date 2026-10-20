@@ -10,7 +10,7 @@ if [[ "$unsigned" != "1" ]]; then
   : "${NOTARY_PROFILE:?Set this to a notarytool keychain profile.}"
 fi
 
-./scripts/build-app.sh
+bash ./scripts/build-app.sh
 
 app="$PWD/dist/MacMove.app"
 version=$(/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' "$app/Contents/Info.plist")
