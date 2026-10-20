@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: macos-26
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Install media test dependency
         run: command -v ffmpeg >/dev/null || brew install ffmpeg
       - name: Website checks
@@ -17,12 +17,12 @@ jobs:
           node scripts/test-demo.cjs
           node scripts/test-analytics.cjs
       - name: Test
-        run: ./scripts/test.sh
+        run: bash ./scripts/test.sh
       - name: Build
-        run: ./scripts/build-app.sh
+        run: bash ./scripts/build-app.sh
       - name: Package trial
-        run: ditto -c -k --sequesterRsrc --keepParent "dist/Open Macmove.app" dist/macmove-macOS.zip
+        run: ditto -c -k --sequesterRsrc --keepParent "dist/MacMove.app" dist/MacMove-macOS.zip
       - uses: actions/upload-artifact@v4
         with:
           name: MacMove-macOS
-          path: dist/macmove-macOS.zip
+          path: dist/MacMove-macOS.zip
