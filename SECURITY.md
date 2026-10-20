@@ -1,11 +1,27 @@
-# Security
+# Security policy
 
-This is a developer trial, not a hardened file-processing boundary. Process only files you trust while worker isolation is unfinished.
+MacMove is an early developer trial and has not had an independent security audit. It is not designed as a hardened boundary for hostile files. Use files from sources you trust, keep backups, and review important outputs.
 
-No account, telemetry, file upload or AI service is implemented. Version checks contact the fixed public GitHub releases endpoint without file contents or credentials. Normal logging is off. `MACMOVE_DEBUG=1` opts into local diagnostic logs which may contain filenames; do not publish them without review.
+## Supported release
 
-Conversion staging never deletes an existing destination. Native image input has file-size and pixel limits. External processes receive argument arrays and have bounded captured output. Archive conversion is disabled pending safe extraction. Original files are retained by conversion workflows.
+Security fixes, if made, are targeted at the latest published release. Older releases do not have a separate support commitment. The current trial targets macOS 26 or later on Apple silicon.
 
-Known release gates: sandboxed workers, hard CPU/memory/time/output limits, metadata and redaction verification, SVG external-resource analysis, archive traversal/link/bomb tests, concurrency-safe publication across every tool, malicious parser corpus, cancellation/process cleanup and code signing/notarization. File extensions are not a trust boundary.
+## Security and privacy notes
 
-To report a vulnerability, use GitHub private vulnerability reporting if enabled; otherwise open a non-sensitive issue asking for a private contact. Do not post private files, secrets, or a working exploit publicly. Do not claim a security audit based on the current regression tests.
+- File conversion runs locally. The app does not upload files to a MacMove server.
+- Update checks contact the public GitHub releases API; they do not send file contents, file names, or account credentials.
+- Diagnostic logging is off by default. Setting `MACMOVE_DEBUG=1` enables local logs that can contain file names, full paths, operation details, and errors.
+- Setting `MACMOVE_DEBUG_DRAG` enables a local drag trace. It may contain dragged file paths and event details, and is written to the path in the variable or `/tmp/macmove-drag.log`.
+- Some media operations can invoke a separately installed FFmpeg executable. FFmpeg is not bundled with MacMove.
+- Existing destination files are protected during staged conversions. Native image input has size and pixel limits. Archive conversion is disabled.
+
+These measures do not make parsing untrusted files safe. The app does not yet isolate every worker or enforce hard CPU, memory, time, and output limits. Metadata and visible redaction tools are not certified security or anonymization controls. File extensions are not a trust boundary.
+
+## Report a vulnerability
+
+Please report suspected vulnerabilities privately rather than posting exploit details in a public issue. Use GitHub's private vulnerability reporting form if it is available for this repository, or email [sintaxerror.pvt.ltd@gmail.com](mailto:sintaxerror.pvt.ltd@gmail.com).
+
+Include the MacMove version, macOS version, affected feature, impact, and steps to reproduce. Do not attach private files, personal data, passwords, or secrets. Ask before sending a proof-of-concept file; a minimal synthetic example is preferable.
+
+There is no guaranteed response or remediation timeline. Please allow time for investigation and coordinated disclosure before publishing technical details. Security reports are for vulnerabilities, not general support requests or feature ideas.
+

@@ -1,11 +1,11 @@
 <div align="center">
   <img src="docs/assets/OasisLogo.png" alt="Oasis logo" width="84" height="84">
   <h1>MacMove for macOS</h1>
-  <p><strong>Tool By Oasis</strong><br>A native Mac menu bar app for image conversion, PDF tools, media editing, and everyday file utilities.</p>
+  <p><strong>Tool by Oasis</strong><br>A native Mac menu bar app for image conversion, PDF tools, media editing, and everyday file utilities.</p>
   <p><strong>macOS 26+</strong> · Local processing · GPL-3.0-only</p>
 </div>
 
-<p align="center"><a href="https://oasis.upfaast.com/">Website</a> · <a href="https://github.com/Giridharnandi/MacMove-By-Oasis/releases">Downloads</a> · <a href="https://oasis.upfaast.com/#privacy">Privacy</a></p>
+<p align="center"><a href="https://oasis.upfaast.com/">Website</a> · <a href="https://github.com/Giridharnandi/MacMove-By-Oasis/releases">Downloads</a> · <a href="privacy.md">Privacy policy</a> · <a href="SECURITY.md">Security</a></p>
 
 <p align="center">
   <a href="https://github.com/Giridharnandi/MacMove-By-Oasis/releases/download/v0.2.0/MacMove-0.2.0-macOS.pkg"><img src="docs/assets/download-macmove.svg" alt="Download MacMove for Mac — one click, no code, macOS installer (.pkg)" width="460"></a>
@@ -63,10 +63,11 @@ To install a local build, move `dist/MacMove.app` to Applications in Finder. Loc
 
 ## Privacy and limitations
 
-Files are processed locally; the app has no account system or app analytics. Update checks contact GitHub. Optional website analytics run only after consent. Read the [privacy policy](https://oasis.upfaast.com/#privacy) for details.
+Files are processed locally; the app has no account system or app analytics. Update checks contact GitHub. Optional website analytics run only after consent. Read the [privacy policy](privacy.md) or view it on the [MacMove website](https://oasis.upfaast.com/#privacy).
 
 This is an early trial. Not every format route has been verified, archive conversion is disabled, and native image input is limited to 100 MB and 40 megapixels. Metadata editing and visible redaction are not certified anonymization. See [known limitations](docs/BUILD-STATUS.md).
 
 ## License and attribution
 
 MacMove by Oasis additions are licensed under **GPL-3.0-only**. Upstream Satsuma code remains under its original MIT license; notices are included in the app and repository. See [LICENSE](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md).
+

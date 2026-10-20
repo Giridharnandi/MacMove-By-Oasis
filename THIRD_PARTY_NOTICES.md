@@ -1,50 +1,27 @@
-# Third-party notices
+# Third-party software and attributions
+
+MacMove includes upstream code and uses macOS system frameworks. Each component keeps its own copyright and license notices. This file is an attribution guide; it does not replace the license files.
 
 ## Satsuma
 
-Source: https://github.com/plyght/satsuma
-Imported revision: 6cb76b78e1932bcdb297be73454ed75d09c252cc
-Copyright (c) 2026 plyght. MIT license: `NativeApp/LICENSE`.
+- Source: [plyght/Satsuma](https://github.com/plyght/satsuma)
+- Imported revision: `6cb76b78e1932bcdb297be73454ed75d09c252cc`
+- Copyright: © 2026 plyght
+- License: MIT; the full upstream license text is in [`NativeApp/LICENSE`](NativeApp/LICENSE).
 
-The native app is substantially based on Satsuma's Swift implementation. MacMove by Oasis changes include branding, direct compiler build/test scripts, Command and Control workflows, file actions/checksums, safer conversion publication, input limits, opt-in diagnostics, bounded process output, and archive restrictions. Original MIT rights and notice are preserved. The combined distribution and new additions are GPL-3.0-only. No upstream image/logo assets were imported.
+The native application is substantially based on Satsuma's Swift implementation. Oasis-authored changes include MacMove branding, build and test scripts, drag workflows, file actions and checksums, safer output publication, input limits, opt-in diagnostics, bounded process output, and archive restrictions. No upstream image or logo assets were imported.
 
-## Apple frameworks
+Oasis-authored MacMove additions are identified as GPL-3.0-only in [`LICENSE`](LICENSE). Satsuma-derived source retains its upstream MIT copyright and notice. Read both license files when using or redistributing code from this repository.
 
-AppKit, SwiftUI, ImageIO, PDFKit, AVFoundation, CoreImage, CryptoKit and related system frameworks are provided by macOS. They are not redistributed separately.
+## Apple frameworks and operating-system tools
 
-## Optional external programs
+AppKit, SwiftUI, ImageIO, PDFKit, AVFoundation, CoreImage, CryptoKit, and related APIs are supplied by macOS and are not redistributed separately. System utilities used by the app are part of macOS, not bundled third-party executables.
 
-FFmpeg is located on the user's machine and invoked as a separate executable. It is not bundled. Its build-specific LGPL/GPL and codec obligations must be reviewed before distributing a future bundled binary. macOS command-line utilities are supplied by the operating system.
+## Optional external software
 
-MacMove by Oasis does not include proprietary source or branding assets from unrelated products.
+Some audio, video, and codec operations can use FFmpeg if the user has installed it. MacMove does not bundle FFmpeg. FFmpeg's license and codec terms depend on the particular build; users are responsible for obtaining it from a source they trust and reviewing its notices.
 
-## DragShift design reference
+## Interaction-design reference
 
-Source reviewed: https://github.com/llamaboi55/DragShift (18 October 2026).
-DragShift's radial-menu motion and completion controls informed the optional glass
-notch and result actions in 0.1.8. These are native SwiftUI implementations;
-no Python runtime, screenshot-capture renderer or mascot assets were imported.
-The upstream MIT notice is retained below for attribution.
-
-MIT License
-
-Copyright (c) 2026 DragShift contributors
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+[DragShift](https://github.com/llamaboi55/DragShift) was reviewed as an interaction-design reference. Its radial-menu motion and completion controls informed design exploration for MacMove 0.1.8. No DragShift source code or artwork was imported, and it is not a runtime dependency. This acknowledgement does not imply affiliation or endorsement.
 

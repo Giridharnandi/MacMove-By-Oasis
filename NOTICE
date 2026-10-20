@@ -1,5 +1,12 @@
-MacMove by Oasis additions: Copyright 2026 Oasis.
-GPL-3.0-only. See LICENSE.
-Native app substantially based on Satsuma, Copyright 2026 plyght, MIT.
-See THIRD_PARTY_NOTICES.md and NativeApp/LICENSE.
-No affiliation or endorsement by unrelated software publishers is implied.
+# MacMove by Oasis — component notices
+
+Copyright © 2026 Oasis applies to Oasis-authored MacMove material, except where another notice identifies different copyright holders.
+
+This repository contains components with separate license terms:
+
+- Oasis-authored MacMove additions: GNU GPL version 3 only; see [`LICENSE`](LICENSE).
+- Satsuma-derived native application source: Copyright © 2026 plyght, MIT; see [`NativeApp/LICENSE`](NativeApp/LICENSE).
+- Other third-party attributions and optional tools: see [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+
+Keep the applicable license and copyright notices with the portions they cover. This file summarizes attribution; it does not replace or change any license text. Product and company names remain with their respective owners. Mention of a project does not imply affiliation or endorsement.
+
