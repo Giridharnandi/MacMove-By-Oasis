@@ -7,11 +7,11 @@ jobs:
   release:
     runs-on: macos-26
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Install media test dependency
         run: command -v ffmpeg >/dev/null || brew install ffmpeg
       - name: Build and test
-        run: ./scripts/test.sh
+        run: bash ./scripts/test.sh
       - name: Build unsigned installer
         env:
           UNSIGNED_INSTALLER: "1"
