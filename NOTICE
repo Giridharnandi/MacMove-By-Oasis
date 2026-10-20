@@ -4,7 +4,7 @@ Copyright © 2026 Oasis applies to Oasis-authored MacMove material, except where
 
 This repository contains components with separate license terms:
 
-- Oasis-authored MacMove additions: GNU GPL version 3 only; see [`LICENSE`](LICENSE).
+- Oasis-authored MacMove additions: GNU GPL version 3 only; see [`LICENSE`](LICENSE) (Build by Giridhar Nandi).
 - Satsuma-derived native application source: Copyright © 2026 plyght, MIT; see [`NativeApp/LICENSE`](NativeApp/LICENSE).
 - Other third-party attributions and optional tools: see [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 
