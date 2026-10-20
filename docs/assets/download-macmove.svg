@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="92" viewBox="0 0 460 92" role="img" aria-labelledby="title desc">
+  <title id="title">Download MacMove for Mac</title>
+  <desc id="desc">One click to download the macOS installer. No code needed.</desc>
+  <rect x="2" y="2" width="456" height="88" rx="18" fill="#f25318"/>
+  <path d="M39 30v24m-10-10 10 10 10-10M25 60v5h28v-5" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5"/>
+  <text x="76" y="43" fill="#fff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="21" font-weight="700">Download MacMove for Mac</text>
+  <text x="76" y="67" fill="#fff" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="13" font-weight="500" opacity=".92">One click · no code · macOS installer (.pkg)</text>
+</svg>
