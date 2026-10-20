@@ -7,6 +7,10 @@
 
 <p align="center"><a href="https://oasis.upfaast.com/">Website</a> · <a href="https://github.com/Giridharnandi/MacMove-By-Oasis/releases">Downloads</a> · <a href="https://oasis.upfaast.com/#privacy">Privacy</a></p>
 
+<p align="center">
+  <a href="https://github.com/Giridharnandi/MacMove-By-Oasis/releases/download/v0.2.0/MacMove-0.2.0-macOS.pkg"><img src="docs/assets/download-macmove.svg" alt="Download MacMove for Mac — one click, no code, macOS installer (.pkg)" width="460"></a>
+</p>
+
 ## A calmer way to work with files
 
 MacMove keeps image conversion, document tools, media utilities and file actions close at hand. Drag files, use a shortcut to open the right tool, and keep processing on your Mac.
@@ -27,7 +31,7 @@ Many audio, video and codec operations require optional FFmpeg. MacMove does not
 
 ## Download and install
 
-Open [GitHub Releases](https://github.com/Giridharnandi/MacMove-By-Oasis/releases) and download the Mac `.pkg` when a release is available. The package installs MacMove in Applications; launch it there after installation. The first unsigned build may trigger macOS security warnings or require approval before opening.
+Download the [MacMove 0.2.0 macOS installer (.pkg)](https://github.com/Giridharnandi/MacMove-By-Oasis/releases/download/v0.2.0/MacMove-0.2.0-macOS.pkg), open it, and follow the Installer steps. Then launch MacMove from Applications. This unsigned build may trigger a macOS security warning or require approval before opening.
 
 The app targets **macOS 26 or later**. This trial is for **Apple silicon**; Intel compatibility has not been verified. Some media features need a separately installed FFmpeg build.
 
