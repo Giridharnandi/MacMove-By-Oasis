@@ -1,7 +1,7 @@
 <div align="center">
   <img src="docs/assets/OasisLogo.png" alt="Oasis logo" width="84" height="84">
-  <h1>MacMove</h1>
-  <p><strong>by Oasis</strong><br>Thoughtful tools for everyday files on Mac.</p>
+  <h1>MacMove for macOS</h1>
+  <p><strong>by Oasis</strong><br>A native Mac menu bar app for image conversion, PDF tools, media editing, and everyday file utilities.</p>
   <p><strong>macOS 26+</strong> · Local processing · GPL-3.0-only</p>
 </div>
 
@@ -11,15 +11,17 @@
   <a href="https://github.com/Giridharnandi/MacMove-By-Oasis/releases/download/v0.2.0/MacMove-0.2.0-macOS.pkg"><img src="docs/assets/download-macmove.svg" alt="Download MacMove for Mac — one click, no code, macOS installer (.pkg)" width="460"></a>
 </p>
 
-## A calmer way to work with files
+If MacMove is useful in your workflow, [star the repository](https://github.com/Giridharnandi/MacMove-By-Oasis) to help more Mac users discover it.
 
-MacMove keeps image conversion, document tools, media utilities and file actions close at hand. Drag files, use a shortcut to open the right tool, and keep processing on your Mac.
+## A calmer way to work with files on Mac
+
+MacMove is an open-source macOS file utility that brings an image converter, PDF tools, media editing, and file actions into one menu bar app. Drag files or use a keyboard shortcut to open the right tool, then process files locally on your Mac.
 
 ![MacMove by Oasis image conversion and file tools wheels](docs/assets/macmove-tools-overview.png)
 
 *Illustrative product graphic. The controls and labels show the tool families; this is not a live app screenshot.*
 
-## What you can do
+## Mac image conversion, PDF tools, media editing, and file actions
 
 - **Convert images** across PNG, JPEG, HEIC, TIFF, BMP, WebP, AVIF and SVG input routes.
 - **Work with PDFs and documents**: create, merge, split, reorder pages, and export PDF content to text, images or DOCX.
