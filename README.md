@@ -1,7 +1,7 @@
 <div align="center">
   <img src="docs/assets/OasisLogo.png" alt="Oasis logo" width="84" height="84">
   <h1>MacMove for macOS</h1>
-  <p><strong>by Oasis</strong><br>A native Mac menu bar app for image conversion, PDF tools, media editing, and everyday file utilities.</p>
+  <p><strong>Tool By Oasis</strong><br>A native Mac menu bar app for image conversion, PDF tools, media editing, and everyday file utilities.</p>
   <p><strong>macOS 26+</strong> · Local processing · GPL-3.0-only</p>
 </div>
 
